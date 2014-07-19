@@ -1,0 +1,38 @@
+{
+	"name": "Motor Driver 1A Dual TB6612FNG",
+	"links": ["https://www.sparkfun.com/products/9457"],
+	"cost": 8.95,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [
+			{
+				"voltage_min": 3.3,
+				"voltage_max": 15,
+				"current": 3.2
+			},
+			{
+				"voltage_min": 2.7,
+				"voltage_max": 5.5,
+				"current": 2e-3
+			}
+		],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "stby,ain1,ain2,bin1,bin2"
+			},
+			{
+				"type": "pwm",
+				"range": "pwma,pwmb"
+			}
+		]
+	},
+	"provides": {
+		"pins": [{
+			"type": "motor",
+            "range": "A,B",
+			"max_stall_current": 1.5
+		}]
+	}
+}

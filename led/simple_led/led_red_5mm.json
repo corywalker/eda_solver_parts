@@ -1,0 +1,20 @@
+{
+	"name": "5mm red LED",
+	"links": ["https://www.sparkfun.com/products/9590"],
+	"cost": 0.35,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"current": 20e-3,
+            "voltage_min": 2,
+            "voltage_max": 7
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "vcc"
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "QTR-8A Reflectance Sensor Array",
+	"links": ["http://www.pololu.com/product/960"],
+	"cost": 9.95,
+	"popularity": 3,
+
+	"n_sensors": 8,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 3.3,
+			"voltage_max": 5,
+			"current": 0.1
+		}],
+		"pins": [
+			{
+				"type": "analog",
+				"range": "out0-out7"
+			},
+			{
+				"type": "digital",
+				"range": "ledon"
+			}
+		]
+	}
+}

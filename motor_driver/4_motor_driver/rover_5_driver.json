@@ -1,0 +1,41 @@
+{
+	"name": "Rover 5 Motor Driver Board",
+	"links": ["https://www.sparkfun.com/products/11593"],
+	"cost": 24.95,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [
+			{
+				"voltage_min": 3.3,
+				"voltage_max": 12,
+				"current": 10
+			},
+			{
+				"voltage": 5,
+				"current": 100e-3
+			}
+		],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "dir1-dir4,ch1_enc1,ch1_enc2,ch2_enc1,ch2_enc2,ch3_enc1,ch3_enc2,ch4_enc1,ch4_enc2"
+			},
+			{
+				"type": "pwm",
+				"range": "pwm1-pwm4"
+			},
+			{
+				"type": "analog",
+				"range": "cur1-cur4"
+			}
+		]
+	},
+	"provides": {
+		"pins": [{
+			"type": "motor",
+            "range": "CH1-CH4",
+			"max_stall_current": 4
+		}]
+	}
+}

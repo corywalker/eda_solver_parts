@@ -1,0 +1,19 @@
+{
+	"name": "QRE1113 (Digital)",
+	"links": ["https://www.sparkfun.com/products/9454"],
+	"cost": 2.95,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 25e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "out"
+			}
+		]
+	}
+}

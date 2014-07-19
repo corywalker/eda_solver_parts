@@ -1,0 +1,31 @@
+{
+	"name": "4051",
+	"links": ["http://playground.arduino.cc/Learning/4051"],
+	"cost": 0.62,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 16e-6
+		}],
+		"pins": [
+			{
+				"type": "analog",
+				"range": "X"
+			},
+			{
+				"type": "digital",
+                "range": "A,B,C"
+			}
+		]
+	},
+	"provides": {
+		"pins": [
+			{
+				"type": "analog",
+				"range": "X0-X7"
+			}
+		]
+	}
+}

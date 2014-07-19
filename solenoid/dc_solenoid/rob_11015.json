@@ -1,0 +1,17 @@
+{
+	"name": "ROB-11015",
+	"links": ["https://www.sparkfun.com/products/11015"],
+	"cost": 4.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 1
+		}],
+		"pins": [{
+			"type": "this.control",
+			"range": "vcc"
+		}]
+	}
+}

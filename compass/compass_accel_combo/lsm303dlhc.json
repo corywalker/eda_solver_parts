@@ -1,0 +1,20 @@
+{
+	"name": "LSM303DLHC",
+	"links": ["http://www.pololu.com/product/2124"],
+	"cost": 7.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 2.5,
+			"voltage_max": 5.5,
+			"current": 10e-3
+		}],
+		"pins": [
+			{
+				"type": "i2c",
+				"range": "scl,sda"
+			}
+		]
+	}
+}

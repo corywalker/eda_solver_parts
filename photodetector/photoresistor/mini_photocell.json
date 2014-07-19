@@ -1,0 +1,15 @@
+{
+	"name": "Mini Photocell",
+	"links": ["https://www.sparkfun.com/products/9088"],
+	"cost": 1.50,
+	"popularity": 3,
+
+	"requires": {
+		"pins": [
+			{
+				"type": "analog",
+                "range": "out"
+			}
+		]
+	}
+}

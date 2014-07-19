@@ -1,0 +1,19 @@
+{
+	"name": "QRE1113 (Analog)",
+	"links": ["https://www.sparkfun.com/products/9453"],
+	"cost": 2.95,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 25e-3
+		}],
+		"pins": [
+			{
+				"type": "analog",
+				"range": "out"
+			}
+		]
+	}
+}

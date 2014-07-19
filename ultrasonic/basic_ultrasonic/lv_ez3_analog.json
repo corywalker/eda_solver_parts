@@ -1,0 +1,20 @@
+{
+	"name": "LV-EZ3 (analog)",
+	"links": ["http://www.adafruit.com/products/981"],
+	"cost": 24.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 2.5,
+			"voltage_max": 5.5,
+			"current": 3e-3
+		}],
+		"pins": [
+			{
+				"type": "analog",
+				"range": "an"
+			}
+		]
+	}
+}

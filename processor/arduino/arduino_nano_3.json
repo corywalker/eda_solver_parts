@@ -1,0 +1,64 @@
+{
+	"name": "Arduino Nano 3.0",
+	"links": [
+			"http://arduino.cc/en/Main/arduinoBoardNano"
+		],
+	"cost": 46.94,
+	"popularity": 2,
+
+	"clock": 16e6,
+	"flash": 32e3,
+	"sram": 2e3,
+	"eeprom": 1e3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 6.5,
+			"voltage_max": 18,
+			"current": 1
+		}]
+	},
+	"provides": {
+		"power_supplies": [
+			{
+				"voltage": 5,
+				"current": 1
+			}
+		],
+		"max_pin_current": [{
+			"voltage": 5,
+			"current": 40e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "0-13,A0-A7"
+			},
+			{
+				"type": "analog",
+				"range": "A0-A7"
+			},
+			{
+				"type": "pwm",
+				"range": "3,5,6,9,10,11"
+			},
+			{
+				"type": "serial",
+				"range": "0,1,"
+			},
+			{
+				"type": "pc_serial",
+				"range": "0,1"
+			},
+			{
+				"type": "i2c",
+				"range": "4,5"
+			},
+			{
+				"type": "spi",
+				"range": "10-13"
+			}
+		],
+		"usb_link": true
+	}
+}

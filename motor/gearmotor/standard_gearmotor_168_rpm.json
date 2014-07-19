@@ -1,0 +1,14 @@
+{
+	"name": "Standard Gearmotor - 168 RPM (3-12V)",
+	"links": ["https://www.sparkfun.com/products/12144"],
+	"cost": 24.95,
+	"popularity": 3,
+
+	"requires": {
+		"pins": [{
+			"type": "motor",
+            "range": "vcc",
+			"max_stall_current": 0.5
+		}]
+	}
+}

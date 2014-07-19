@@ -1,0 +1,21 @@
+{
+	"name": "Hitec HS-422",
+	"links": ["https://www.sparkfun.com/products/11884"],
+	"cost": 9.95,
+	"popularity": 3,
+
+	"rotation": 180,
+	"torque": 50,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 4.8,
+			"voltage_max": 6,
+			"current": 0.7
+		}],
+		"pins": [{
+			"type": "pwm",
+            "range": "sig"
+		}]
+	}
+}

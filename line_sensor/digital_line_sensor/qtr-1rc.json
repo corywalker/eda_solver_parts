@@ -1,0 +1,19 @@
+{
+	"name": "QTR-1RC Reflectance Sensor",
+	"links": ["http://www.pololu.com/product/959"],
+	"cost": 2.13,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 17e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "out"
+			}
+		]
+	}
+}
