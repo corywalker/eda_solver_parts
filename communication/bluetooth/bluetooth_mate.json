@@ -13,7 +13,10 @@
 		"pins": [
 			{
 				"type": "serial",
-				"range": "rx,tx"
+				"groups": [{
+					"rx": "rx",
+					"tx": "tx"
+				}]
 			},
 			{
 				"type": "digital",

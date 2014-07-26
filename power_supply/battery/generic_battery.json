@@ -1,0 +1,10 @@
+{
+	"name": "Generic battery",
+
+	"provides": {
+		"power_supplies": [{
+				"voltage": 3.7,
+				"current": 1
+			}]
+	}
+}

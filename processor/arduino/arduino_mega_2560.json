@@ -49,19 +49,47 @@
 			},
 			{
 				"type": "serial",
-				"range": "0,1,14-19"
+				"groups": [
+					{
+						"rx": "0",
+						"tx": "1"
+					},
+					{
+						"rx": "15",
+						"tx": "14"
+					},
+					{
+						"rx": "17",
+						"tx": "16"
+					},
+					{
+						"rx": "19",
+						"tx": "18"
+					}
+				]
 			},
 			{
 				"type": "pc_serial",
-				"range": "0,1"
+				"groups": [{
+					"rx": "0",
+					"tx": "1"
+				}]
 			},
 			{
 				"type": "i2c",
-				"range": "20,21"
+				"groups": [{
+					"sda": "20",
+					"scl": "21"
+				}]
 			},
 			{
 				"type": "spi",
-				"range": "50-53"
+				"groups": [{
+					"miso": "50",
+					"mosi": "51",
+					"sck": "52",
+					"ss": "53"
+				}]
 			}
 		],
 		"usb_link": true

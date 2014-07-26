@@ -13,7 +13,10 @@
 		"pins": [
 			{
 				"type": "i2c",
-				"range": "scl,sda"
+				"groups": [{
+					"sda": "sda",
+					"scl": "scl"
+				}]
 			}
 		]
 	}
