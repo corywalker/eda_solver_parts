@@ -1,0 +1,20 @@
+{
+	"name": "NTSC/PAL TFT Display - 3.5\" Diagonal",
+	"links": ["http://www.adafruit.com/products/913"],
+	"cost": 44.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 6,
+			"voltage_max": 12,
+			"current": 225e-3
+		}],
+		"pins": [
+			{
+				"type": "composite",
+				"range": "comp_in"
+			}
+		]
+	}
+}

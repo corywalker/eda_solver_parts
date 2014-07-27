@@ -1,0 +1,15 @@
+{
+	"name": "SEN-11957",
+	"links": ["https://www.sparkfun.com/products/11957"],
+	"cost": 15.95,
+	"popularity": 2,
+
+	"requires": {
+		"pins": [
+			{
+				"type": "usb",
+				"range": "usb"
+			}
+		]
+	}
+}

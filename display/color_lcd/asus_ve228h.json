@@ -1,0 +1,15 @@
+{
+	"name": "Asus VE228H 21.5\" LCD Monitor w/Speakers",
+	"links": ["http://www.newegg.com/Product/Product.aspx?Item=N82E16824236100"],
+	"cost": 139.99,
+	"popularity": 1,
+
+	"requires": {
+		"pins": [
+			{
+				"type": "hdmi",
+				"range": "hdmi"
+			}
+		]
+	}
+}

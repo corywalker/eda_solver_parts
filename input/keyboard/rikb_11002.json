@@ -1,0 +1,15 @@
+{
+	"name": "Rosewill RIKB-11002",
+	"links": ["http://www.newegg.com/Product/Product.aspx?Item=N82E16823201047"],
+	"cost": 9.99,
+	"popularity": 1,
+
+	"requires": {
+		"pins": [
+			{
+				"type": "usb",
+				"range": "usb"
+			}
+		]
+	}
+}

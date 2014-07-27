@@ -1,0 +1,15 @@
+{
+	"name": "Raspberry Pi camera",
+	"links": ["https://www.sparkfun.com/products/11868"],
+	"cost": 29.95,
+	"popularity": 2,
+
+	"requires": {
+		"pins": [
+			{
+				"type": "pi_cam",
+				"range": "pi_cam"
+			}
+		]
+	}
+}

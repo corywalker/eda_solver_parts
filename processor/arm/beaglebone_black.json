@@ -1,0 +1,114 @@
+{
+	"name": "Beaglebone Black",
+	"links": [
+			"https://www.sparkfun.com/products/12076"
+		],
+	"cost": 44.95,
+	"popularity": 3,
+
+	"clock": 1e9,
+	"ram": 512e6,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage": 5,
+			"current": 1.5
+		}]
+	},
+	"provides": {
+		"power_supplies": [
+			{
+				"voltage": 5,
+				"current": 500e-3
+			},
+			{
+				"voltage": 3.3,
+				"current": 200e-3
+			}
+		],
+		"max_pin_current": [{
+			"voltage": 3.3,
+			"current": 5e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "R3-R46,L11-L31,L41,L42"
+			},
+			{
+				"type": "analog",
+				"range": "L33,L35-L40"
+			},
+			{
+				"type": "pwm",
+				"range": "L14,L16,L21,L22,L28,L29,L31,L42,R13,R19,R34,R36,R45,R46"
+			},
+			{
+				"type": "serial",
+				"groups": [
+					{
+						"rx": "L26",
+						"tx": "L24"
+					},
+					{
+						"rx": "L22",
+						"tx": "L21"
+					},
+					{
+						"rx": "L11",
+						"tx": "L13"
+					},
+					{
+						"rx": "R38",
+						"tx": "R37"
+					}
+				]
+			},
+			{
+				"type": "i2c",
+				"groups": [
+					{
+						"sda": "L18",
+						"scl": "L17"
+					},
+					{
+						"sda": "L20",
+						"scl": "L19"
+					}
+				]
+			},
+			{
+				"type": "spi",
+				"groups": [
+					{
+						"miso": "L21",
+						"mosi": "L18",
+						"sck": "L22",
+						"ss": "L17"
+					},
+					{
+						"miso": "L29",
+						"mosi": "L30",
+						"sck": "L31",
+						"ss": "L20"
+					},
+					{
+						"miso": "L29",
+						"mosi": "L30",
+						"sck": "L31",
+						"ss": "L19"
+					}
+				]
+			},
+			{
+				"type": "usb",
+				"range": "usb"
+			},
+			{
+				"type": "hdmi",
+				"range": "hdmi"
+			}
+		],
+		"usb_link": true
+	}
+}
