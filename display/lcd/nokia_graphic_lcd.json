@@ -1,0 +1,28 @@
+{
+	"name": "Graphic LCD 84x48 - Nokia 5110",
+	"links": ["https://www.sparkfun.com/products/10168"],
+	"cost": 9.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 2.7,
+			"voltage_max": 3.3,
+			"current": 20e-3
+		}],
+		"pins": [
+			{
+				"type": "spi",
+				"groups": [{
+					"mosi": "dn",
+					"sck": "sclk",
+					"ss": "sce"
+				}]
+			},
+			{
+				"type": "digital",
+				"range": "rst,dc"
+			}
+		]
+	}
+}
