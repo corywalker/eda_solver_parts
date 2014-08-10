@@ -1,0 +1,23 @@
+{
+	"name": "9 Degrees of Freedom - Sensor Stick",
+	"links": ["https://www.sparkfun.com/products/10724"],
+	"cost": 49.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 4,
+			"voltage_max": 7,
+			"current": 10e-3
+		}],
+		"pins": [
+			{
+				"type": "i2c",
+				"groups": [{
+					"sda": "sda",
+					"scl": "scl"
+				}]
+			}
+		]
+	}
+}
