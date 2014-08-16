@@ -1,0 +1,29 @@
+{
+	"name": "nRF24L01+ Module with Chip Antenna",
+	"links": ["https://www.sparkfun.com/products/691"],
+	"cost": 19.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 3.3,
+			"voltage_max": 7,
+			"current": 45e-3
+		}],
+		"pins": [
+			{
+				"type": "spi",
+				"groups": [{
+					"mosi": "mosi",
+					"miso": "miso",
+					"sck": "sck",
+					"ss": "csn"
+				}]
+			},
+			{
+				"type": "digital",
+				"range": "ce"
+			}
+		]
+	}
+}
