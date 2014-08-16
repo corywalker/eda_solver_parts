@@ -1,0 +1,20 @@
+{
+	"name": "Basic 16x2 Character LCD - Black on Green 5V",
+	"links": ["https://www.sparkfun.com/products/255"],
+	"cost": 13.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 4.7,
+			"voltage_max": 5.5,
+			"current": 2.5e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "D0-D7,rs,rw,en"
+			}
+		]
+	}
+}

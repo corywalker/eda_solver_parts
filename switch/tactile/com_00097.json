@@ -1,0 +1,16 @@
+{
+	"name": "Mini Push Button Switch",
+	"links": ["https://www.sparkfun.com/products/97"],
+	"cost": 0.20,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "out"
+			}
+		]
+	}
+}

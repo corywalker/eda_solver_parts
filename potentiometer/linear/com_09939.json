@@ -1,0 +1,16 @@
+{
+	"name": "Rotary Potentiometer - 10k Ohm, Linear",
+	"links": ["https://www.sparkfun.com/products/9939"],
+	"cost": 0.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [],
+		"pins": [
+			{
+				"type": "analog",
+				"range": "out"
+			}
+		]
+	}
+}
