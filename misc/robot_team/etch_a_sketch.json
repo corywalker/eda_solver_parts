@@ -1,0 +1,29 @@
+{
+	"name": "Etch-A-Sketch module",
+	"links": [],
+	"cost": 24.95,
+	"popularity": 1,
+
+	"requires": {
+		"power_supplies": [
+			{
+				"voltage_min": 5,
+				"voltage_max": 12,
+				"current": 0.5
+			}
+		],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "clk1,dir1,clk2,dir2"
+			}
+		]
+	},
+	"provides": {
+		"pins": [{
+			"type": "stepper",
+            "range": "a1,a2,b1,b2",
+			"max_stall_current": 4
+		}]
+	}
+}

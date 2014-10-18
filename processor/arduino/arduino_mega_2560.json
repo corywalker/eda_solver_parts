@@ -48,6 +48,10 @@
 				"range": "2-13,44-46"
 			},
 			{
+				"type": "interrupt",
+				"range": "2,3,18,19,20,21"
+			},
+			{
 				"type": "serial",
 				"groups": [
 					{
