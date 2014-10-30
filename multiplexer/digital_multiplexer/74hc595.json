@@ -1,0 +1,28 @@
+{
+	"name": "Shift Register 8-Bit - 74HC595",
+	"links": ["https://www.sparkfun.com/products/733"],
+	"cost": 1.50,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 2,
+			"voltage_max": 6,
+			"current": 80e-6
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "latch,clock,data"
+			}
+		]
+	},
+	"provides": {
+		"pins": [
+			{
+				"type": "digital",
+				"range": "Q0-Q7"
+			}
+		]
+	}
+}
