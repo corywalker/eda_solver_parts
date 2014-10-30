@@ -1,0 +1,40 @@
+{
+	"name": "16-Channel 12-bit PWM/Servo Driver",
+	"links": ["http://www.adafruit.com/product/815"],
+	"cost": 14.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [
+			{
+				"voltage_min": 2.3,
+				"voltage_max": 5.5,
+				"current": 500e-6
+			}, {
+				"voltage_min": 1,
+				"voltage_max": 6,
+				"current": 100e-3
+			}
+		],
+		"pins": [
+			{
+				"type": "i2c",
+				"groups": [{
+					"sda": "sda",
+					"scl": "scl"
+				}]
+			}, {
+				"type": "digital",
+				"range": "oe"
+			}
+		]
+	},
+	"provides": {
+		"pins": [
+			{
+				"type": "pwm",
+				"range": "out0-out15"
+			}
+		]
+	}
+}
