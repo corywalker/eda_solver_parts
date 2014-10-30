@@ -1,0 +1,29 @@
+{
+	"name": "MicroSD card breakout board+",
+	"links": ["http://www.adafruit.com/product/254"],
+	"cost": 14.95,
+	"popularity": 2,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 4.9,
+			"voltage_max": 5.5,
+			"current": 80e-3
+		}],
+		"pins": [
+			{
+				"type": "spi",
+				"groups": [{
+					"mosi": "di",
+					"miso": "do",
+					"sck": "clk",
+					"ss": "cs"
+				}]
+			},
+			{
+				"type": "digital",
+				"range": "cd"
+			}
+		]
+	}
+}
