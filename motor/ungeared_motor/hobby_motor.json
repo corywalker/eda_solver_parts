@@ -1,0 +1,14 @@
+{
+	"name": "Hobby Motor - Gear",
+	"links": ["https://www.sparkfun.com/products/11696"],
+	"cost": 1.95,
+	"popularity": 2,
+
+	"requires": {
+		"pins": [{
+			"type": "motor",
+			"range": "vcc",
+			"max_stall_current_$gt": 0.5
+		}]
+	}
+}
