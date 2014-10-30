@@ -1,0 +1,18 @@
+{
+	"name": "Stepper Motor with Cable",
+	"links": ["https://www.sparkfun.com/products/9238"],
+	"cost": 14.95,
+	"popularity": 3,
+
+	"requires": {
+		"pins": [{
+			"type": "stepper",
+			"groups": [{
+				"a1": "a1",
+				"a2": "a2",
+				"b1": "b1",
+				"b2": "b2"
+			}]
+		}]
+	}
+}

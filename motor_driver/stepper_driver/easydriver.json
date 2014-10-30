@@ -1,0 +1,31 @@
+{
+	"name": "EasyDriver Stepper Motor Driver",
+	"links": ["https://www.sparkfun.com/products/10267"],
+	"cost": 14.95,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 7,
+			"voltage_max": 20,
+			"current": 300e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "step,dir"
+			}
+		]
+	},
+	"provides": {
+		"pins": [{
+			"type": "stepper",
+			"groups": [{
+				"a1": "a1",
+				"a2": "a2",
+				"b1": "b1",
+				"b2": "b2"
+			}]
+		}]
+	}
+}
