@@ -6,17 +6,21 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage": 5,
 			"current": 16e-6
 		}],
 		"pins": [
 			{
 				"type": "analog",
-				"range": "X"
+				"range": "X",
+				"direction": "out"
 			},
 			{
 				"type": "digital",
-                "range": "A,B,C"
+				"range": "A,B,C",
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	},
@@ -24,7 +28,8 @@
 		"pins": [
 			{
 				"type": "analog",
-				"range": "X0-X7"
+				"range": "X0-X7",
+				"direction": "in"
 			}
 		]
 	}

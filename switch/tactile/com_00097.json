@@ -9,7 +9,8 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "out"
+				"range": "out",
+				"direction": "out"
 			}
 		]
 	}

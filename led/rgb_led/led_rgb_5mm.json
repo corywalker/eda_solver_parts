@@ -7,13 +7,14 @@
 	"requires": {
 		"power_supplies": [{
 			"current": 60e-3,
-            "voltage_min": 2,
-            "voltage_max": 7
+			"voltage_min": 2,
+			"voltage_max": 7
 		}],
 		"pins": [
 			{
 				"type": "digital",
-				"range": "1,3,4"
+				"range": "1,3,4",
+				"direction": "out"
 			}
 		]
 	}

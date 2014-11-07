@@ -12,30 +12,44 @@
 				"current": 10
 			},
 			{
-				"voltage": 5,
+				"name": "vcc",
+				"voltage_min": 3.3,
+				"voltage_max": 5,
 				"current": 100e-3
 			}
 		],
 		"pins": [
 			{
 				"type": "digital",
-				"range": "dir1-dir4,ch1_enc1,ch1_enc2,ch2_enc1,ch2_enc2,ch3_enc1,ch3_enc2,ch4_enc1,ch4_enc2"
+				"range": "dir1-dir4",
+				"direction": "in",
+				"voltage": "vcc"
+			},
+			{
+				"type": "digital",
+				"range": "ch1_enc1,ch1_enc2,ch2_enc1,ch2_enc2,ch3_enc1,ch3_enc2,ch4_enc1,ch4_enc2",
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "pwm",
-				"range": "pwm1-pwm4"
+				"range": "pwm1-pwm4",
+				"direction": "in",
+				"voltage": "vcc"
 			},
 			{
 				"type": "analog",
-				"range": "cur1-cur4"
+				"range": "cur1-cur4",
+				"direction": "out"
 			}
 		]
 	},
 	"provides": {
 		"pins": [{
 			"type": "motor",
-            "range": "CH1-CH4",
-			"max_stall_current": 4
+			"range": "CH1-CH4",
+			"max_stall_current": 4,
+			"direction": "out"
 		}]
 	}
 }

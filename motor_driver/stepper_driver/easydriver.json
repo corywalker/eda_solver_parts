@@ -13,7 +13,9 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "step,dir"
+				"range": "step,dir",
+				"direction": "in",
+				"voltage": [5, 3.3]
 			}
 		]
 	},
@@ -25,7 +27,8 @@
 				"a2": "a2",
 				"b1": "b1",
 				"b2": "b2"
-			}]
+			}],
+			"direction": "out"
 		}]
 	}
 }

@@ -12,6 +12,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage_min": 4.75,
 			"voltage_max": 5.25,
 			"current": 2.2e-3
@@ -19,14 +20,18 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "conv"
+				"range": "conv",
+				"direction": "in",
+				"voltage": "vcc"
 			},
 			{
 				"type": "spi",
 				"groups": [{
 					"miso": "data",
 					"sck": "clk"
-				}]
+				}],
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	},
@@ -34,7 +39,8 @@
 		"pins": [
 			{
 				"type": "analog",
-				"range": "pos_in"
+				"range": "pos_in",
+				"direction": "in"
 			}
 		]
 	}

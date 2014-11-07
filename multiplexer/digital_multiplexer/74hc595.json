@@ -6,6 +6,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage_min": 2,
 			"voltage_max": 6,
 			"current": 80e-6
@@ -13,7 +14,9 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "latch,clock,data"
+				"range": "latch,clock,data",
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	},
@@ -21,7 +24,9 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "Q0-Q7"
+				"range": "Q0-Q7",
+				"direction": "out",
+				"voltage": "vcc"
 			}
 		]
 	}

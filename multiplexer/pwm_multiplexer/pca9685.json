@@ -7,10 +7,12 @@
 	"requires": {
 		"power_supplies": [
 			{
+				"name": "vcc",
 				"voltage_min": 2.3,
 				"voltage_max": 5.5,
 				"current": 500e-6
 			}, {
+				"name": "vplus",
 				"voltage_min": 1,
 				"voltage_max": 6,
 				"current": 100e-3
@@ -22,10 +24,14 @@
 				"groups": [{
 					"sda": "sda",
 					"scl": "scl"
-				}]
+				}],
+				"direction": "in",
+				"voltage": "vcc"
 			}, {
 				"type": "digital",
-				"range": "oe"
+				"range": "oe",
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	},
@@ -33,7 +39,9 @@
 		"pins": [
 			{
 				"type": "pwm",
-				"range": "out0-out15"
+				"range": "out0-out15",
+				"direction": "out",
+				"voltage": "vplus"
 			}
 		]
 	}
