@@ -1,0 +1,41 @@
+{
+	"name": "ADS7818P",
+	"links": [
+			"http://www.digikey.com/product-detail/en/ADS7818P/ADS7818P-ND/272009"
+		],
+	"cost": 6.41,
+	"popularity": 1,
+
+	"sample_rate": 500e3,
+	"bits": 12,
+	"inputs": 1,
+
+	"requires": {
+		"power_supplies": [{
+			"voltage_min": 4.75,
+			"voltage_max": 5.25,
+			"current": 2.2e-3
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "conv"
+			},
+			{
+				"type": "spi",
+				"groups": [{
+					"miso": "data",
+					"sck": "clk"
+				}]
+			}
+		]
+	},
+	"provides": {
+		"pins": [
+			{
+				"type": "analog",
+				"range": "pos_in"
+			}
+		]
+	}
+}
