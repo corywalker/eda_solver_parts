@@ -22,6 +22,7 @@
 				"current": 300e-3
 			},
 			{
+				"name": "vcc",
 				"voltage": 3.3,
 				"current": 170e-3
 			}
@@ -33,25 +34,32 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "3,5,7,8,10-13,15,16,18,19,21-24,26"
+				"range": "3,5,7,8,10-13,15,16,18,19,21-24,26",
+				"direction": "inout",
+				"voltage": "vcc"
 			},
 			{
 				"type": "pwm",
-				"range": "12"
+				"range": "12",
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "serial",
 				"groups": [{
 					"rx": "10",
 					"tx": "8"
-				}]
+				}],
+				"voltage": "vcc"
 			},
 			{
 				"type": "i2c",
 				"groups": [{
 					"sda": "3",
 					"scl": "5"
-				}]
+				}],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "spi",
@@ -68,27 +76,34 @@
 						"sck": "23",
 						"ss": "26"
 					}
-				]
+				],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "usb",
-				"range": "usb1-usb2"
+				"range": "usb1-usb2",
+				"direction": "out"
 			},
 			{
 				"type": "hdmi",
-				"range": "hdmi"
+				"range": "hdmi",
+				"direction": "out"
 			},
 			{
 				"type": "composite",
-				"range": "composite"
+				"range": "composite",
+				"direction": "out"
 			},
 			{
 				"type": "3_5_mm_jack",
-				"range": "headphone"
+				"range": "headphone",
+				"direction": "out"
 			},
 			{
 				"type": "pi_cam",
-				"range": "pi_cam"
+				"range": "pi_cam",
+				"direction": "out"
 			}
 		],
 		"usb_link": true

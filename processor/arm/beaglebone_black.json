@@ -22,6 +22,7 @@
 				"current": 500e-3
 			},
 			{
+				"name": "vcc",
 				"voltage": 3.3,
 				"current": 200e-3
 			}
@@ -33,15 +34,21 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "R3-R46,L11-L31,L41,L42"
+				"range": "R3-R46,L11-L31,L41,L42",
+				"direction": "inout",
+				"voltage": "vcc"
 			},
 			{
 				"type": "analog",
-				"range": "L33,L35-L40"
+				"range": "L33,L35-L40",
+				"direction": "in",
+				"voltage": 1.8
 			},
 			{
 				"type": "pwm",
-				"range": "L14,L16,L21,L22,L28,L29,L31,L42,R13,R19,R34,R36,R45,R46"
+				"range": "L14,L16,L21,L22,L28,L29,L31,L42,R13,R19,R34,R36,R45,R46",
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "serial",
@@ -62,7 +69,9 @@
 						"rx": "R38",
 						"tx": "R37"
 					}
-				]
+				],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "i2c",
@@ -75,7 +84,9 @@
 						"sda": "L20",
 						"scl": "L19"
 					}
-				]
+				],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "spi",
@@ -98,15 +109,19 @@
 						"sck": "L31",
 						"ss": "L19"
 					}
-				]
+				],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "usb",
-				"range": "usb"
+				"range": "usb",
+				"direction": "out"
 			},
 			{
 				"type": "hdmi",
-				"range": "hdmi"
+				"range": "hdmi",
+				"direction": "out"
 			}
 		],
 		"usb_link": true

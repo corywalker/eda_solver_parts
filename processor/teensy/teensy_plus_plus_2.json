@@ -13,6 +13,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage": 5,
 			"current": 70e-3
 		}]
@@ -25,36 +26,45 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "0-37,A0-A7"
+				"range": "0-37,A0-A7",
+				"direction": "inout",
+				"voltage": "vcc"
 			},
 			{
 				"type": "analog",
-				"range": "A0-A7"
+				"range": "A0-A7",
+				"direction": "in"
 			},
 			{
 				"type": "pwm",
-				"range": "0,1,14-16,24-27"
+				"range": "0,1,14-16,24-27",
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "serial",
 				"groups": [{
 					"rx": "2",
 					"tx": "3"
-				}]
+				}],
+				"voltage": "vcc"
 			},
 			{
 				"type": "pc_serial",
 				"groups": [{
 					"rx": "2",
 					"tx": "3"
-				}]
+				}],
+				"voltage": "vcc"
 			},
 			{
 				"type": "i2c",
 				"groups": [{
 					"sda": "1",
 					"scl": "0"
-				}]
+				}],
+				"direction": "out",
+				"voltage": "vcc"
 			},
 			{
 				"type": "spi",
@@ -63,7 +73,9 @@
 					"mosi": "22",
 					"miso": "23",
 					"sck": "21"
-				}]
+				}],
+				"direction": "out",
+				"voltage": "vcc"
 			}
 		],
 		"usb_link": true
