@@ -6,6 +6,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage_min": 4.7,
 			"voltage_max": 5.5,
 			"current": 2.5e-3
@@ -13,7 +14,15 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "D0-D7,rs,rw,en"
+				"range": "rs,rw,en",
+				"direction": "in",
+				"voltage": "vcc"
+			},
+			{
+				"type": "digital",
+				"range": "D0-D7",
+				"direction": "inout",
+				"voltage": "vcc"
 			}
 		]
 	}

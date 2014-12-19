@@ -13,7 +13,8 @@
 		"pins": [
 			{
 				"type": "analog",
-				"range": "an"
+				"range": "an",
+				"direction": "out"
 			}
 		]
 	}

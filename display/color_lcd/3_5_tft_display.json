@@ -13,7 +13,8 @@
 		"pins": [
 			{
 				"type": "composite",
-				"range": "comp_in"
+				"range": "comp_in",
+				"direction": "in"
 			}
 		]
 	}

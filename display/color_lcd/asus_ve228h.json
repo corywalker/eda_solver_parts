@@ -8,7 +8,8 @@
 		"pins": [
 			{
 				"type": "hdmi",
-				"range": "hdmi"
+				"range": "hdmi",
+				"direction": "in"
 			}
 		]
 	}
