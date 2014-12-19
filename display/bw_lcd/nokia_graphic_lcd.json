@@ -6,6 +6,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage_min": 2.7,
 			"voltage_max": 3.3,
 			"current": 20e-3
@@ -17,11 +18,15 @@
 					"mosi": "dn",
 					"sck": "sclk",
 					"ss": "sce"
-				}]
+				}],
+				"direction": "in",
+				"voltage": "vcc"
 			},
 			{
 				"type": "digital",
-				"range": "rst,dc"
+				"range": "rst,dc",
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	}

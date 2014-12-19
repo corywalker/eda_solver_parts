@@ -6,13 +6,16 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage": 5,
 			"current": 25e-3
 		}],
 		"pins": [
 			{
 				"type": "digital",
-				"range": "out"
+				"range": "out",
+				"direction": "out",
+				"voltage": "vcc"
 			}
 		]
 	}

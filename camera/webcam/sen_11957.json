@@ -8,7 +8,8 @@
 		"pins": [
 			{
 				"type": "usb",
-				"range": "usb"
+				"range": "usb",
+				"direction": "out"
 			}
 		]
 	}

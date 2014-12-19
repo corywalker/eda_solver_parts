@@ -11,7 +11,8 @@
 		}],
 		"pins": [{
 			"type": "this.control",
-			"range": "vcc"
+			"range": "vcc",
+			"direction": "out"
 		}]
 	}
 }

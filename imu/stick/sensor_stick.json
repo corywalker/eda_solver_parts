@@ -16,7 +16,9 @@
 				"groups": [{
 					"sda": "sda",
 					"scl": "scl"
-				}]
+				}],
+				"direction": "out",
+				"voltage": 3.3
 			}
 		]
 	}

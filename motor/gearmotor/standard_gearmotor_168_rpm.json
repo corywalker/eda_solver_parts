@@ -8,7 +8,8 @@
 		"pins": [{
 			"type": "motor",
 			"range": "vcc",
-			"max_stall_current_$gt": 0.5
+			"max_stall_current_$gt": 0.5,
+			"direction": "in"
 		}]
 	}
 }

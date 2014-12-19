@@ -15,15 +15,18 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "clk1,dir1,clk2,dir2"
+				"range": "clk1,dir1,clk2,dir2",
+				"direction": "in",
+				"voltage": 5
 			}
 		]
 	},
 	"provides": {
 		"pins": [{
 			"type": "stepper",
-            "range": "a1,a2,b1,b2",
-			"max_stall_current": 4
+			"range": "a1,a2,b1,b2",
+			"max_stall_current": 4,
+			"direction": "out"
 		}]
 	}
 }

@@ -6,6 +6,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vin",
 			"voltage_min": 2.5,
 			"voltage_max": 5.5,
 			"current": 10e-3
@@ -16,7 +17,9 @@
 				"groups": [{
 					"sda": "sda",
 					"scl": "scl"
-				}]
+				}],
+				"direction": "in",
+				"voltage": "vin"
 			}
 		]
 	}

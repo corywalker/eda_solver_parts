@@ -8,6 +8,7 @@
 
 	"requires": {
 		"power_supplies": [{
+			"name": "vcc",
 			"voltage_min": 3.3,
 			"voltage_max": 5,
 			"current": 0.1
@@ -15,7 +16,15 @@
 		"pins": [
 			{
 				"type": "digital",
-				"range": "out0-out7,ledon"
+				"range": "out0-out7",
+				"direction": "out",
+				"voltage": "vcc"
+			},
+			{
+				"type": "digital",
+				"range": "ledon",
+				"direction": "in",
+				"voltage": "vcc"
 			}
 		]
 	}

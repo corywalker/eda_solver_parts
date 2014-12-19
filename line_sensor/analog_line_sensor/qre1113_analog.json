@@ -12,7 +12,8 @@
 		"pins": [
 			{
 				"type": "analog",
-				"range": "out"
+				"range": "out",
+				"direction": "out"
 			}
 		]
 	}
