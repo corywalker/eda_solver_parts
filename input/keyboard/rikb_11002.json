@@ -9,7 +9,7 @@
 			{
 				"type": "usb",
 				"range": "usb",
-				"direction": "out"
+				"direction": "in"
 			}
 		]
 	}

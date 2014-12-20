@@ -103,7 +103,7 @@
 			{
 				"type": "pi_cam",
 				"range": "pi_cam",
-				"direction": "out"
+				"direction": "in"
 			}
 		],
 		"usb_link": true

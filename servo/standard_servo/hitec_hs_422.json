@@ -16,7 +16,7 @@
 		"pins": [{
 			"type": "pwm",
 			"range": "sig",
-			"direction": "out",
+			"direction": "in",
 			"voltage": 5
 		}]
 	}
