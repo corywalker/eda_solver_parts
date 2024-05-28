@@ -1,0 +1,38 @@
+{
+	"name": "4051",
+	"links": ["http://playground.arduino.cc/Learning/4051"],
+	"cost": 0.62,
+	"popularity": 3,
+
+	"requires": {
+		"power_supplies": [{
+			"name": "vcc",
+			"voltage": 5,
+			"current": 16e-6
+		}],
+		"pins": [
+			{
+				"type": "digital",
+				"range": "X",
+				"direction": "out",
+				"voltage": "vcc"
+			},
+			{
+				"type": "digital",
+				"range": "A,B,C",
+				"direction": "in",
+				"voltage": "vcc"
+			}
+		]
+	},
+	"provides": {
+		"pins": [
+			{
+				"type": "digital",
+				"range": "X0-X7",
+				"direction": "in",
+				"voltage": "vcc"
+			}
+		]
+	}
+}
