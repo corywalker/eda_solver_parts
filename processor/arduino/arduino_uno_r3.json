@@ -1,9 +1,9 @@
 {
 	"name": "Arduino Uno Rev3",
 	"links": [
-			"http://store.arduino.cc/index.php?main_page=product_info&products_code=A000066"
+			"https://store-usa.arduino.cc/products/arduino-uno-rev3?queryID=undefined&selectedStore=us"
 		],
-	"cost": 28.45,
+	"cost": 27.60,
 	"popularity": 3.1,
 
 	"clock": 16e6,

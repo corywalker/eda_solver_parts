@@ -1,9 +1,9 @@
 {
 	"name": "Arduino Nano 3.0",
 	"links": [
-			"http://arduino.cc/en/Main/arduinoBoardNano"
+			"https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us"
 		],
-	"cost": 46.94,
+	"cost": 24.90,
 	"popularity": 2,
 
 	"clock": 16e6,

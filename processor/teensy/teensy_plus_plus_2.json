@@ -4,7 +4,7 @@
 			"https://www.pjrc.com/store/teensypp.html"
 		],
 	"cost": 24,
-	"popularity": 2,
+	"popularity": 0.1,
 
 	"clock": 16e6,
 	"flash": 127e3,
